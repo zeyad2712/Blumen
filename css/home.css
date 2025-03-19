@@ -1,0 +1,16 @@
+:root {
+    --background-color:#FEE8D1;
+    --text-color:#FEE8D1;
+    --cart-icon-color:#FCC96E;
+    --card-background-color:#D87593;
+    --ellipse3:#EBAFB2;
+    --ellipse4:#E4505E;
+    --navbar-color:#B20253;
+    --buttons-color:#B20253;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
