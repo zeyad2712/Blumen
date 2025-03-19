@@ -30,6 +30,62 @@
 <body>
 
 
+    <!-- Navbar -->
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a class="navbar-brand" href="#">Blumen</a>
+            </div>
+
+            <div class="nav-list">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <!-- Cart Button -->
+                    <li>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                            aria-label="Toggle navigation">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+
+
+            <!-- The Cart -->
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Your Cart</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <!-- The Cart Body -->
+                <div class="offcanvas-body">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+
 
 
     <!-- Link Js Bootstrap -->
