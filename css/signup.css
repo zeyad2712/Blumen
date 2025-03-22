@@ -1,0 +1,402 @@
+:root {
+    --background-color: #FEE8D1;
+    --text-color: #FEE8D1;
+    --cart-icon-color: #FCC96E;
+    --card-background-color: #D87593;
+    --ellipse3: #EBAFB2;
+    --ellipse4: #E4505E;
+    --navbar-color: #B20253;
+    --buttons-color: #B20253;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* Navbar style */
+
+.navbar {
+    background-color: var(--navbar-color) !important;
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-radius: 60px;
+    position: relative;
+    top: 15px;
+}
+
+.navbar .container-fluid {
+    padding-inline: 35px;
+}
+
+.navbar .container-fluid .logo .navbar-brand {
+    font-family: "Great Vibes", cursive;
+    font-size: 35px;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .container-fluid .nav-list .nav-item .nav-link {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .container-fluid .nav-list .nav-item .nav-link:hover {
+    transform: scale(1.1);
+}
+
+
+/* Main Content style */
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: transparent;
+    padding: 30px;
+    width: 35%;
+    border-radius: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.form h1 {
+    text-align: center;
+    font-family: "Faustina", serif;
+    font-weight: 600;
+    color: #000;
+}
+
+::placeholder {
+    color: #00000082;
+    font-weight: 600;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.flex-column>label {
+    color: #151717;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.inputForm {
+    border: 1.5px solid #ecedec;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    transition: 0.2s ease-in-out;
+}
+
+.input {
+    border-radius: 30px;
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px 15px;
+    background-color: var(--ellipse3);
+}
+
+.input:focus {
+    outline: none;
+}
+
+.inputForm:focus-within {
+    border: 1.5px solid #B20253;
+    border-radius: 30px;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.flex-row>div>label {
+    font-size: 14px;
+    color: black;
+    font-weight: 400;
+}
+
+.span {
+    font-size: 14px;
+    margin-left: 5px;
+    color: #B20253;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.button-submit {
+    margin: auto;
+    background-color: var(--buttons-color);
+    border: none;
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 30px;
+    height: 50px;
+    width: 60%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button-submit:hover {
+    background-color: #da0959;
+    transform: scale(1.1);
+}
+
+.button-submit a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.p {
+    text-align: center;
+    color: black;
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.btn {
+    margin-top: 10px;
+    width: 100%;
+    height: 45px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    gap: 10px;
+    border: 1px solid #ededef;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+    border: 1px solid #B20253;
+    background-color: #fff;
+}
+
+
+/* footer style */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(to bottom, var(--background-color), var(--ellipse3), var(--buttons-color));
+}
+
+.footer .footer-list {
+    padding: 10px 5px;
+}
+
+.footer .footer-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer .footer-list ul li {
+    padding-inline: 25px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.footer .footer-list ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.footer .footer-list ul li:hover {
+    transform: scale(1.1);
+}
+
+.footer .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.footer .heading h1 {
+    font-size: 9em;
+    font-family: "Great Vibes", cursive;
+    color: #000;
+    opacity: 0.7;
+    letter-spacing: 10px;
+}
+
+.footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-bottom p {
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.footer .footer-bottom ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer .footer-bottom ul li {
+    padding-inline: 10px;
+}
+
+.footer .footer-bottom ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+}
+
+.footer .footer-bottom ul li a .fa-facebook {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-facebook:hover {
+    color: rgb(45, 45, 190);
+}
+
+.footer .footer-bottom ul li a .fa-twitter {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-twitter:hover {
+    color: rgb(63, 63, 225);
+}
+
+.footer .footer-bottom ul li a .fa-instagram {
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    border-radius: 20%;
+    color: transparent;
+}
+
+.footer .footer-bottom ul li a .fa-linkedin {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-linkedin:hover {
+    color: rgb(54, 54, 172);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        top: 0;
+        border-radius: 0 0 60px 60px;
+    }
+
+    .navbar .container-fluid {
+        justify-content: center;
+    }
+
+    .navbar .container-fluid .logo .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar .container-fluid .nav-list ul {
+        justify-content: center !important;
+    }
+
+    .navbar .container-fluid .nav-list ul .nav-item .nav-link {
+        font-size: 14px !important;
+        padding: 8px;
+    }
+
+    .form {
+        width: 90%;
+        gap: 8px;
+        padding: 10px 5px;
+        margin-top: -20px;
+    }
+
+    .form h1 {
+        font-size: 35px;
+    }
+
+    .flex-column>label {
+        font-size: 18px;
+    }
+
+    .input {
+        padding: 9px 12px;
+    }
+
+    .button-submit {
+        width: 50%;
+        height: 40px;
+    }
+
+    .footer {
+        height: 43vh;
+    }
+
+    .footer .footer-list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer .footer-list ul {
+        margin-left: -20px;
+    }
+
+    .footer .footer-list ul li {
+        padding-inline: 5px;
+    }
+
+    .footer .footer-list ul li a {
+        font-size: 15px;
+    }
+
+    .footer .heading {
+        padding-top: 10px;
+    }
+
+    .footer .heading h1 {
+        font-size: 5em;
+    }
+
+    .footer .footer-bottom {
+        margin-top: 30px;
+    }
+
+    .footer .footer-bottom p {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .footer .footer-bottom ul li a {
+        font-size: 20px;
+    }
+
+}
