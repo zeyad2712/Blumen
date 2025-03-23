@@ -10,3 +10,7 @@ Blumen is an elegant and user-friendly online flower shop designed to make gifti
 --Wishlist
 
 --Payment Page
+
+--About Us
+
+--Forget Password
