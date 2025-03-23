@@ -27,7 +27,7 @@ body {
     margin: auto;
     border: none;
     border-radius: 60px;
-    position: relative;
+    position: sticky;
     top: 15px;
 }
 
