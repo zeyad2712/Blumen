@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
     <!-- Link google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,182 @@
 
 <body>
 
+
+    <!-- Navbar -->
+
+    <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a class="navbar-brand" href="#">Blumen</a>
+            </div>
+
+            <div class="nav-list">
+                <ul class="nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Wishlist</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- End Navbar -->
+
+    <!-- login form -->
+
+    <div class="main">
+
+        <form class="form">
+            <h1 class="h1">LOGIN</h1>
+            <div class="flex-column">
+                <label>Username </label>
+            </div>
+            <div class="inputForm">
+                <input type="text" class="input" placeholder="Enter Your Username">
+            </div>
+            <div class="flex-column">
+                <label>Password </label>
+            </div>
+            <div class="inputForm">
+                <input type="password" class="input" placeholder="Enter Your Password">
+            </div>
+
+            <div class="flex-row">
+                <div>
+                    <input type="checkbox">
+                    <label>Remember me </label>
+                </div>
+                <a class="span" href="#">Forgot password?</a>
+            </div>
+            <button class="button-submit">
+                <a href="#">
+                    Login
+                </a>
+            </button>
+            <p class="p">Don't have an account? <a href="signup.html" class="span">Regester Now</a>
+            </p>
+            <p class="p line">Or With</p>
+
+            <div class="flex-row">
+                <button class="btn google">
+                    <svg version="1.1" width="20" id="Layer_1" xmlns="<http://www.w3.org/2000/svg>"
+                        xmlns:xlink="<http://www.w3.org/1999/xlink>" x="0px" y="0px" viewBox="0 0 512 512"
+                        style="enable-background:new 0 0 512 512;" xml:space="preserve">
+
+
+
+                        <path style="fill:#FBBB00;" d="M113.47,309.408L95.648,375.94l-65.139,1.378C11.042,341.211,0,299.9,0,256
+            c0-42.451,10.324-82.483,28.624-117.732h0.014l57.992,10.632l25.404,57.644c-5.317,15.501-8.215,32.141-8.215,49.456
+            C103.821,274.792,107.225,292.797,113.47,309.408z"></path>
+                        <path style="fill:#518EF8;" d="M507.527,208.176C510.467,223.662,512,239.655,512,256c0,18.328-1.927,36.206-5.598,53.451
+            c-12.462,58.683-45.025,109.925-90.134,146.187l-0.014-0.014l-73.044-3.727l-10.338-64.535
+            c29.932-17.554,53.324-45.025,65.646-77.911h-136.89V208.176h138.887L507.527,208.176L507.527,208.176z">
+                        </path>
+                        <path style="fill:#28B446;" d="M416.253,455.624l0.014,0.014C372.396,490.901,316.666,512,256,512
+            c-97.491,0-182.252-54.491-225.491-134.681l82.961-67.91c21.619,57.698,77.278,98.771,142.53,98.771
+            c28.047,0,54.323-7.582,76.87-20.818L416.253,455.624z"></path>
+                        <path style="fill:#F14336;" d="M419.404,58.936l-82.933,67.896c-23.335-14.586-50.919-23.012-80.471-23.012
+            c-66.729,0-123.429,42.957-143.965,102.724l-83.397-68.276h-0.014C71.23,56.123,157.06,0,256,0
+            C318.115,0,375.068,22.126,419.404,58.936z"></path>
+
+
+                    </svg>
+                    Google
+
+                </button>
+                <button class="btn apple">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15"
+                        viewBox="0 0 320 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z" />
+                    </svg>
+
+                    Facebook
+                </button>
+            </div>
+        </form>
+
+
+
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer-list">
+            <ul>
+                <li>
+                    <a href="#">
+                        Services
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Contact 
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        About Us
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Locations
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="heading">
+            <h1>Blumen</h1>
+        </div>
+
+        <div class="footer-bottom">
+            <p>
+                &copy; 2023 Blumen. All rights reserved. | Contact us: +965 285 39 021
+            </p>
+
+            <ul>
+                <li>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+
+    <!-- End Footer -->
+
+
+    <!-- Link Js Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
