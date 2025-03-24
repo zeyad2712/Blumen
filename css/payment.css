@@ -1,0 +1,402 @@
+:root {
+    --background-color: #FEE8D1;
+    --text-color: #FEE8D1;
+    --cart-icon-color: #FCC96E;
+    --card-background-color: #d87593ab;
+    --ellipse3: #EBAFB2;
+    --ellipse4: #E4505E;
+    --navbar-color: #B20253;
+    --buttons-color: #B20253;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+/* Navbar style */
+
+.navbar {
+    background-color: var(--navbar-color) !important;
+    width: 90%;
+    margin: auto;
+    border: none;
+    border-radius: 60px;
+    position: sticky;
+    top: 15px;
+}
+
+.navbar .container-fluid {
+    padding-inline: 35px;
+}
+
+.navbar .container-fluid .logo .navbar-brand {
+    font-family: "Great Vibes", cursive;
+    font-size: 35px;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .container-fluid .nav-list .nav-item button {
+    border: none;
+    margin-top: 10px;
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .container-fluid .nav-list .nav-item button:hover {
+    transform: scale(1.1);
+}
+
+.navbar .container-fluid .nav-list .nav-item .nav-link {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar .container-fluid .nav-list .nav-item .nav-link:hover {
+    transform: scale(1.1);
+}
+
+/* cart style */
+
+.offcanvas {
+    background-color: var(--background-color) !important;
+    border: none;
+    border-radius: 40px 0 0 40px;
+}
+
+.offcanvas-body a button {
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: var(--buttons-color);
+    color: var(--text-color);
+    font-size: 17px;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+}
+
+.offcanvas-body a button:hover {
+    transform: scale(1.1);
+}
+
+.offcanvas-body .card .row .col-md-4 img {
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+}
+
+.card-body {
+    position: relative;
+}
+
+.card-body i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+    color: rgb(214, 21, 21);
+}
+
+/* main content */
+
+.title {
+    text-align: center;
+    padding: 15px 0;
+}
+
+.title h1 {
+    font-size: 5em;
+    font-weight: 900;
+    font-family: "Faustina", serif;
+    color: #B20253;
+}
+
+
+.main {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+p {
+    margin: 0px;
+}
+
+.container .h8 {
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #B20253 0%, #E4505E 51%, #EBAFB2 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+
+}
+
+
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+.form-control {
+    color: white;
+    background-color: var(--card-background-color);
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+    transition: all 0.3s ease-in-out;
+}
+
+.form-control:focus {
+    border: 2px solid var(--buttons-color);
+    box-shadow: none;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+
+
+
+/* footer style */
+
+.footer {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(to bottom, var(--background-color), var(--ellipse3), var(--buttons-color));
+}
+
+.footer .footer-list {
+    padding: 10px 5px;
+}
+
+.footer .footer-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.footer .footer-list ul li {
+    padding-inline: 25px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.footer .footer-list ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.footer .footer-list ul li:hover {
+    transform: scale(1.1);
+}
+
+.footer .heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.footer .heading h1 {
+    font-size: 9em;
+    font-family: "Great Vibes", cursive;
+    color: #000;
+    opacity: 0.7;
+    letter-spacing: 10px;
+}
+
+.footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footer-bottom p {
+    color: #000;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 10px 20px;
+}
+
+.footer .footer-bottom ul {
+    display: flex;
+    list-style: none;
+}
+
+.footer .footer-bottom ul li {
+    padding-inline: 10px;
+}
+
+.footer .footer-bottom ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 40px;
+}
+
+.footer .footer-bottom ul li a .fa-facebook {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-facebook:hover {
+    color: rgb(45, 45, 190);
+}
+
+.footer .footer-bottom ul li a .fa-twitter {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-twitter:hover {
+    color: rgb(63, 63, 225);
+}
+
+.footer .footer-bottom ul li a .fa-instagram {
+    transition: all 0.4s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    border-radius: 20%;
+    color: transparent;
+}
+
+.footer .footer-bottom ul li a .fa-linkedin {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footer-bottom ul li a .fa-linkedin:hover {
+    color: rgb(54, 54, 172);
+}
+
+
+/* Media Query */
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 100%;
+        top: 0;
+        border-radius: 0 0 60px 60px;
+    }
+
+    .navbar .container-fluid {
+        justify-content: center;
+    }
+
+    .navbar .container-fluid .logo .navbar-brand {
+        font-size: 20px;
+    }
+
+    .navbar .container-fluid .nav-list ul {
+        justify-content: center !important;
+    }
+
+    .navbar .container-fluid .nav-list ul .nav-item .nav-link {
+        font-size: 12px !important;
+        padding: 8px;
+    }
+
+    .navbar .container-fluid .nav-list .nav-item button {
+        font-size: 12px !important;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .footer {
+        height: 43vh;
+    }
+
+    .footer .footer-list {
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer .footer-list ul {
+        margin-left: -20px;
+    }
+
+    .footer .footer-list ul li {
+        padding-inline: 5px;
+    }
+
+    .footer .footer-list ul li a {
+        font-size: 15px;
+    }
+
+    .footer .heading {
+        padding-top: 10px;
+    }
+
+    .footer .heading h1 {
+        font-size: 5em;
+    }
+
+    .footer .footer-bottom {
+        margin-top: 30px;
+    }
+
+    .footer .footer-bottom p {
+        font-size: 10px;
+        padding: 10px;
+    }
+
+    .footer .footer-bottom ul li a {
+        font-size: 20px;
+    }
+
+    .main{
+        height: 70vh;
+    }
+
+}
