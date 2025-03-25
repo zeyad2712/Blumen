@@ -51,3 +51,46 @@ function validateSignupForm() {
 
     return true;
 }
+
+
+var icon1 = document.getElementById('icon1');
+var icon2 = document.getElementById('icon2');
+
+icon1.onclick = function () {
+    var password = document.getElementById("password");
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+
+    var confirmPassword = document.getElementById("confirmPassword");
+    if (confirmPassword.type === "password") {
+        confirmPassword.type = "text";
+    } else {
+        confirmPassword.type = "password";
+    };
+
+    icon1.classList.toggle("d-none");
+    icon2.classList.toggle("d-none");
+}
+
+
+icon2.onclick = function () {
+    var password = document.getElementById("password");
+    if (password.type === "text") {
+        password.type = "password";
+    } else {
+        password.type = "text";
+    }
+
+    var confirmPassword = document.getElementById("confirmPassword");
+    if (confirmPassword.type === "password") {
+        confirmPassword.type = "text";
+    } else {
+        confirmPassword.type = "password";
+    };
+
+    icon1.classList.toggle("d-none");
+    icon2.classList.toggle("d-none");
+};
