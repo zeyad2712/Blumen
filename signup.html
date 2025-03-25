@@ -47,7 +47,7 @@
                         <a class="nav-link" href="products.html">Products</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Wishlist</a>
+                        <a class="nav-link" href="wishlist.html">Wishlist</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.html">Login</a>
@@ -63,41 +63,37 @@
 
     <div class="main">
 
-        <form class="form">
+        <form class="form" onsubmit="return validateSignupForm()">
             <h1 class="h1">Sign Up</h1>
             <div class="flex-column">
                 <label>Username </label>
             </div>
             <div class="inputForm">
-                <input type="text" class="input" placeholder="Enter Your Username">
+                <input id="username" type="text" class="input" placeholder="Enter Your Username">
             </div>
             <div class="flex-column">
                 <label>Email </label>
             </div>
             <div class="inputForm">
-                <input type="email" class="input" placeholder="Enter Your Email">
+                <input id="email" type="email" class="input" placeholder="Enter Your Email">
             </div>
             <div class="flex-column">
                 <label>Password </label>
             </div>
             <div class="inputForm">
-                <input type="password" class="input" placeholder="Enter Your Password">
+                <input id="password" type="password" class="input" placeholder="Enter Your Password">
             </div>
             <div class="flex-column">
                 <label>Confirm Password </label>
             </div>
             <div class="inputForm">
-                <input type="password" class="input" placeholder="Confirm Your Password">
+                <input id="confirmPassword" type="password" class="input" placeholder="Confirm Your Password">
             </div>
 
-           
-            <button class="button-submit">
-                <a href="#">
-                    Sign Up
-                </a>
+            <button class="button-submit" type="submit">
+                Sign Up
             </button>
-            <p class="p">Already have an account? <a href="login.html" class="span">Login Now</a>
-            </p>
+            <p class="p">Already have an account? <a href="login.html" class="span">Login Now</a></p>
         </form>
 
 
@@ -113,7 +109,7 @@
         <div class="footer-list">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="services.html">
                         Services
                     </a>
                 </li>
@@ -123,7 +119,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="aboutus.html">
                         About Us
                     </a>
                 </li>
@@ -169,6 +165,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+
+
+    <!-- link js file -->
+    <script src="js/signup.js"></script>
 </body>
 
 </html>
