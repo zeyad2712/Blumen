@@ -30,3 +30,33 @@ function validateLoginForm() {
         return false;
     }
 }
+
+var icon1 = document.getElementById('icon1');
+var icon2 = document.getElementById('icon2');
+
+icon1.onclick = function () {
+    var password = document.getElementById("loginPassword");
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+
+    icon1.classList.toggle("d-none");
+    icon2.classList.toggle("d-none");
+};
+
+
+icon2.onclick = function () {
+    var password = document.getElementById("loginPassword");
+    if (password.type === "text") {
+        password.type = "password";
+    } else {
+        password.type = "text";
+    }
+
+    icon1.classList.toggle("d-none");
+    icon2.classList.toggle("d-none");
+};
+
+
